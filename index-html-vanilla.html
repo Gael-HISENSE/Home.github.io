@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torre de Control Logística</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Hisense</div>
+        <div class="menu">
+            <a href="#">TELEVISIÓN</a>
+            <a href="#">LÍNEA BLANCA</a>
+            <a href="#">AUDIO</a>
+            <a href="#">AC</a>
+            <a href="#">CONTACTO</a>
+            <span class="search-icon">&#128269;</span>
+        </div>
+    </nav>
+    <div class="container">
+        <h1 class="main-title">Torre de Control Logística</h1>
+        <div class="processes-container">
+            <div class="process" data-process="recibo">
+                <h2>Recibo</h2>
+                <div class="process-items" style="display: none;">
+                    <button>Entrada</button>
+                    <button>Inicio de descarga</button>
+                    <button>Fin de descarga</button>
+                    <button>Verificación</button>
+                    <button>Salida</button>
+                    <button>RDR & Pedimento</button>
+                </div>
+            </div>
+            <div class="process" data-process="embarques">
+                <h2>Embarques</h2>
+                <div class="process-items" style="display: none;">
+                    <button>Avance operativo</button>
+                    <button>Entrada</button>
+                    <button>Inicio de carga</button>
+                    <button>Fin de carga</button>
+                    <button>Documentos</button>
+                    <button>Salida</button>
+                    <button>Diagramas de carga</button>
+                </div>
+            </div>
+            <div class="process" data-process="entregas">
+                <h2>Entregas</h2>
+                <div class="process-items" style="display: none;">
+                    <button>Inicio de ruta</button>
+                    <button>Monitoreo transito</button>
+                    <button>Arribo a cliente</button>
+                    <button>Entrega a cliente</button>
+                    <button>POD</button>
+                </div>
+            </div>
+            <div class="process" data-process="rechazo">
+                <h2>Rechazo</h2>
+                <div class="process-items" style="display: none;">
+                    <button>Entrada</button>
+                    <button>Inicio de descarga</button>
+                    <button>Fin de descarga</button>
+                    <button>Salida</button>
+                    <button>Análisis del rechazo</button>
+                </div>
+            </div>
+            <div class="process" data-process="siniestros">
+                <h2>Siniestros</h2>
+                <div class="process-items" style="display: none;">
+                    <button>Registro</button>
+                    <button>Documentación</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-content"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
